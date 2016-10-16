@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T8b-cq-mmH">
+                                <rect key="frame" x="20" y="20" width="560" height="530"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu3-S3-dgr">
+                                <rect key="frame" x="229" y="562" width="127" height="30"/>
+                                <color key="backgroundColor" red="0.99850255250930786" green="0.15863239765167236" blue="0.32080072164535522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="UaN-EE-MNQ"/>
+                                </constraints>
+                                <state key="normal" title="Start Downloading">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="0.42214196669999998" blue="0.52065216489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startDowloadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xv1-YC-3Du"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="I8i-C0-ggb">
+                                <rect key="frame" x="285" y="270" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="TBO-U9-Fhg"/>
+                                    <constraint firstAttribute="width" secondItem="I8i-C0-ggb" secondAttribute="height" multiplier="1:1" id="uUk-Dh-QuZ"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T8b-cq-mmH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0Ua-cd-h4R"/>
+                            <constraint firstItem="T8b-cq-mmH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6OG-90-EDe"/>
+                            <constraint firstItem="gu3-S3-dgr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="6uC-8B-weS"/>
+                            <constraint firstItem="T8b-cq-mmH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BOZ-Zn-Lnh"/>
+                            <constraint firstItem="I8i-C0-ggb" firstAttribute="centerY" secondItem="T8b-cq-mmH" secondAttribute="centerY" id="IMc-0N-m1n"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gu3-S3-dgr" secondAttribute="bottom" constant="2" id="Jbj-7R-Ses"/>
+                            <constraint firstItem="T8b-cq-mmH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jic-lU-tzV"/>
+                            <constraint firstItem="I8i-C0-ggb" firstAttribute="centerX" secondItem="T8b-cq-mmH" secondAttribute="centerX" id="KVq-hd-AAB"/>
+                            <constraint firstItem="T8b-cq-mmH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xml-2P-KPo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gu3-S3-dgr" secondAttribute="trailing" constant="100" id="Z9H-XX-che"/>
+                            <constraint firstItem="T8b-cq-mmH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fVR-yB-XQP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T8b-cq-mmH" secondAttribute="bottom" constant="50" id="tMp-GP-huN"/>
+                            <constraint firstItem="gu3-S3-dgr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wKP-QY-Sna"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T8b-cq-mmH" secondAttribute="trailing" id="yRk-YG-xfe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Jic-lU-tzV"/>
+                                <exclude reference="fVR-yB-XQP"/>
+                                <exclude reference="wKP-QY-Sna"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="myFirstImageDownloadIndicator" destination="I8i-C0-ggb" id="Ore-77-BhC"/>
+                        <outlet property="myFirstImageView" destination="T8b-cq-mmH" id="bMZ-PC-lUZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
